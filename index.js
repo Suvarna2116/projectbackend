@@ -18,7 +18,7 @@ mongoose.connect("mongodb+srv://Suvarna:Suvarna@cluster0.zctitke.mongodb.net/Fir
     .catch((err)=>{
         console.log(err)
     })
-app.get("/example",(req,res)=>{
+app.get("/",(req,res)=>{
     res.send("Hello!!!!")
 })
 app.get("/users",async(req,res)=>{
